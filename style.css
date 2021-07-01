@@ -1,0 +1,405 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+
+@media (max-width : 500px) {
+.dark-mode {
+  background-color: black;
+  color: #fff;
+  transition: .5s;
+}
+
+.logo {
+  padding: 20px ;
+  
+}
+#home {
+  width:100%;
+  height: 100vh;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  border: 2px solid #f7f7f7;
+  z-index: 1111;
+
+}
+nav ul {
+  width: 100%;
+  float: right;
+  position: absolute;
+  top: -500px;
+  text-align: center;
+  background-color:#FAFCFE;
+  transition: .5s;
+  
+}
+nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  
+}
+span {
+  padding-right: 20px;
+}
+nav ul li a:hover {
+  color: #069C54;
+}
+/*.dark-mode {
+  color: white;
+  background-clip: black;
+}
+
+*/
+body.dark-theme {
+  text-color:white;
+  title-color: white;
+  container-color : black;
+  body-color: black;
+}
+#moon {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  color: black;
+}
+
+.title {
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  padding-top: 95px;
+  width: 60%;
+}
+.title h1 {
+  font-size: 36px;
+  color:#308662;
+  font-family: 'Poppins', sans-serif;
+  padding-top:50px ;
+}
+.title h3 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.button {
+  padding: 20px;
+  width: 200px;
+  height: 90px;
+}
+.menu {
+  padding: 13px;
+  outline: none;
+  background-color:#069C54;
+  border-radius: 5px;
+  color: white;
+}
+.image {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+.image img {
+  width: 90%;
+  text-align: center;
+  font-weight: normal;
+  transition: all .5s ease-in;
+}
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content-box {
+  width: 100%;
+  height: 500px;
+  /*display: flex;
+  justify-content: center;
+  */
+  text-align: center;
+
+}
+.content-box .main-title {
+  color:#069C54 ;
+  padding-top: 80px;
+  font-size: 18px;
+}
+.content-box h4 {
+  font-size: 30px;
+  font-weight: normal;
+  width: 80%;
+  margin: auto;
+  letter-spacing: 0;
+  padding-top: 10px;
+}
+.content-box p {
+  color: #00000084;
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+}
+.btn_ {
+  padding-top: 40px;
+  width: 100%;
+}
+.btn_2{
+  padding: 20px;
+  background-color: #069C54;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn_ img {
+  width:80%;
+  border-radius:8px ;
+  margin: 50px 0;
+}
+#services {
+  width: 100%;
+  height: 100vh ;
+}
+.main-title_2 {
+  color:#069C54 ;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom:15px ;
+  padding-top: 80px;
+}
+.content-box_2 {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+.discharge {
+  width: 64px;
+  height: 64px;
+  fill: green;
+  padding-top: 10px;
+}
+.content-box_2 h2 {
+  font-size: 17px;
+  padding-bottom:15px ;
+  padding-top:15px ;
+  letter-spacing: 1px;
+}
+.content-box_2 .service {
+  font-size: 28px;
+  font-weight: normal;
+  padding-bottom:15px ;
+}
+#upward {
+  width: 45px;
+  height: 45px;
+  background-color:#069C54 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position: absolute;*/
+  right: 10px;
+  position: fixed;
+  border-radius: 20px;
+  opacity: .5;
+  z-index: 1111;
+}
+#upward i {
+  color: white;
+}
+#upward a {
+  text-decoration: none;
+}
+#menu {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  z-index: -1;
+}
+.content-box_3 {
+  padding-top: 80px;
+}
+.content-box_3 p {
+  color:#069C54 ;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom:15px ;
+  padding-top: 80px;
+}
+content-box_3 h3 {
+}
+.div_1 {
+  position: relative;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 30px ;
+  box-shadow: 0 2px 4px rgba(3, 74 40 15);
+}
+.div_2 {
+  padding-top:20px ;
+  width: 200px;
+  height: 230px;
+ /* border: 2px solid red;*/
+  box-shadow: 2px 2px 6px gray;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.div_2 img{
+  width: 130px;
+  z-index: -1;
+  
+}
+.btn_21 {
+  position: relative;
+  top: 8%;
+  left: 25%;
+  padding: 20px;
+  color: white;
+  background-color: #069C54;
+  border-radius: 8px ;
+  
+}
+
+.advertisement img {
+  width: 80%;
+}
+#application_01 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+/*.application_detail p {
+  color: black;
+}
+*/
+.app1_2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.app1_2 img {
+  margin: 40px 0;
+  width: 40%;
+}
+.content-box_4 h2 {
+ font-size: 33px;
+ font-weight: bold;
+ margin: 10px 0;
+}
+.application_detail {
+  width: 80%;
+  margin: auto;
+  color: #00000084;
+}
+.heading {
+ color:#069C54 ;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom:5px ;
+  padding-top: 70px; 
+}
+.heading h2 {
+  font-size: 33px;
+ font-weight: bold;
+ margin: 10px 0;
+ text-align: center;
+}
+.content-box_5 {
+  text-align: center;
+}
+#contact {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+
+}
+.content_about {
+  
+  width: 80%;
+  margin: auto;
+  color: #00000084;
+  text-align: center;
+  padding: 30px;
+}
+.content-about p {
+  padding: 100px;
+}
+  
+.btn_3 {
+  padding: 20px;
+  background-color: #069C54;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  height: 30px;
+}
+.buttu {
+  margin: 40px;
+}
+footer {
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  
+}
+footer h2 {
+  color: #069C54;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+footer p {
+  color:#00000084 ;
+}
+footer ul {
+  padding: 20px;
+}
+footer li {
+  display: inline;
+  margin: 0 10px;
+  font-size: 25px;
+  
+}
+footer ul li i {
+  
+}
+.service_about {
+  
+}
+.service_about li {
+  display: block;
+  font-size: 15px;
+  color:#00000084
+}
+.service_about li h2 {
+  color: black;
+  padding: 15px;
+}
+.footer_copy {
+  padding: 25px;
+}
+}
